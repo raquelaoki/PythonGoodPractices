@@ -1,3 +1,5 @@
+import pandas as pd
+
 from baselines.baseline1 import Baseline
 from new_method import NewMethod
 from sklearn.metrics import accuracy_score
