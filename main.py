@@ -14,12 +14,14 @@ import yaml
 
 from data_preprocessing import make_dataset
 
+
 def main(config_path):
     """ Main function of the project.
     It loads config settings, dataset, run all the methods, save output.
     Args:
         config_path: path for the config files.
     """
+    print('Starting...')
     # Load the config file. All comments should end with a .
     with open(config_path) as f:
         config = yaml.safe_load(f)
@@ -37,6 +39,7 @@ def main(config_path):
         output.to_csv(file_path)
     else:
         print(output)
+    print('Done!')
     return
 
 
