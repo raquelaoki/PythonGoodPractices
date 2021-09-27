@@ -29,7 +29,7 @@ def main(config_path):
     X_train, X_test, y_train, y_test = make_dataset(params)
 
     # Run methods.
-    output = run_methdos(X_train, X_test, y_train, y_test, params)
+    output = utils.run_methdos(X_train, X_test, y_train, y_test, params)
 
     # Save results.
     if params['save_output']:
