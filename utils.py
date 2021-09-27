@@ -27,7 +27,7 @@ def run_methdos(X_train, X_test, y_train, y_test, params):
     for method in params.get('methods', ['new_method']):
         if method == 'new_method':
             model = NewMethod()
-        elif method == 'baseline1':
+        elif method == 'baseline':
             model = Baseline()
         else:
             raise ValueError(f"Method {method} not implemented.")
