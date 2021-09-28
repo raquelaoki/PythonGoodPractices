@@ -1,5 +1,6 @@
 from sklearn.linear_model import LogisticRegression
 
+
 class NewMethod:
     """New Method.
     This class implements the new method.

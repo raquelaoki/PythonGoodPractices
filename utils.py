@@ -22,7 +22,8 @@ def run_methdos(X_train, X_test, y_train, y_test, params):
     Returns:
         pd.Dataframe with the results.
     """
-    output = pd.DataFrame(columns=['method', 'config', 'metric_train', 'metric_test'])
+    output = pd.DataFrame(columns=['method', 'config',
+                                   'metric_train', 'metric_test'])
 
     for method in params.get('methods', ['new_method']):
         if method == 'new_method':
