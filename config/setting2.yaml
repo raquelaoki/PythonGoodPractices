@@ -1,0 +1,10 @@
+parameters:
+  data: TODO
+  methods: ['new_method', 'baseline']
+  save_output: True
+  n_samples: 1000
+  n_features: 40
+  seed: 10
+  config: 2
+  test_size: 0.33
+  path_output: 'output'
